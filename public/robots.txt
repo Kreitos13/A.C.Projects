@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Vervang example.be door het echte domein
+Sitemap: https://www.example.be/sitemap.xml

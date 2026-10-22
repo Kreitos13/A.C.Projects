@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A.C. Projects — Dakwerken</title>
+<meta name="description" content="A.C. Projects — dakwerken in België. Hellende en platte daken, zinkwerk, renovatie.">
+<meta name="theme-color" content="#0a0907">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A.C. Projects">
+<meta property="og:title" content="A.C. Projects — Dakwerken in België">
+<meta property="og:description" content="Elk dak begint als een tekening. Wij bouwen het tot op de millimeter.">
+<meta property="og:locale" content="nl_BE">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,200..800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="logo" href="#top" aria-label="A.C. Projects">
+    <svg viewBox="0 0 30 30" aria-hidden="true">
+      <rect x="1" y="1" width="28" height="28" fill="none" stroke="#c9a961" stroke-width="1.5"/>
+      <path d="M5 19 L15 8 L25 19" fill="none" stroke="#ecd497" stroke-width="2.2"/>
+      <path d="M9 19 L15 13 L21 19" fill="none" stroke="#c9a961" stroke-width="1"/>
+      <path d="M8 24 H22" stroke="#c9a961" stroke-width="1.5"/>
+    </svg>
+    <span>A.C. PROJECTS<small data-i18n="logoSub">DAKWERKEN</small></span>
+  </a>
+  <div class="nav-right">
+    <div class="lang" role="group" aria-label="Taal / Langue / Language">
+      <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang="nl" aria-pressed="true">NL</button>
+    </div>
+    <a class="nav-cta" href="#offerte" data-order><span data-i18n="cta">Offerte aanvragen</span> →</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="top">
+    <div class="stage" id="stage">
+      <div class="aura top" aria-hidden="true"></div>
+      <div class="aura" aria-hidden="true"></div>
+      <div class="cols" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="ruler l" aria-hidden="true"><i></i></div>
+      <div class="ruler r" aria-hidden="true"><i></i></div>
+      <span class="cross" style="left:clamp(10px,4vw,42px);top:calc(var(--nav-h) + 8px)" aria-hidden="true">+</span>
+      <span class="cross" style="right:clamp(10px,4vw,42px);top:calc(var(--nav-h) + 8px)" aria-hidden="true">+</span>
+
+      <div class="eyebrow mono">
+        <span><b>A.C. PROJECTS</b> — <span data-i18n="eyebrowL">Dakwerken · België</span></span>
+        <span id="sheetTxt" aria-live="off"></span>
+      </div>
+
+      <div class="title-layer">
+        <h1 class="title" id="title" aria-label="A.C. Projects">
+          <span style="--i:0">A.C.</span><span style="--i:1">PROJECTS</span>
+        </h1>
+      </div>
+
+      <canvas id="scene" role="img" aria-label=""></canvas>
+
+      <div class="hero-foot" id="heroFoot">
+        <div>
+          <p class="tagline" data-i18n-html="tagline">Elk dak begint als een tekening. <em>Wij bouwen het tot op de millimeter.</em></p>
+          <a class="hero-cta" href="#offerte" data-order><span data-i18n="cta">Offerte aanvragen</span><b aria-hidden="true">→</b></a>
+        </div>
+        <div class="tags mono">
+          <span data-i18n="t1">Hellende daken</span>
+          <span data-i18n="t2">Platte daken</span>
+          <span data-i18n="t3">Zinkwerk</span>
+          <span data-i18n="t4">Renovatie &amp; isolatie</span>
+        </div>
+      </div>
+
+      <div class="scroll-hint mono" id="scrollHint"><span data-i18n="scroll">Scroll</span><i></i></div>
+    </div>
+  </section>
+
+  <section class="next" id="inside">
+    <p class="mono" data-i18n="next">02 — Wat zit erin · volgt</p>
+  </section>
+</main>
+
+<!-- ---------- Quote request (opens from every "Offerte aanvragen" button) ---------- -->
+<div class="order" id="offerte" role="dialog" aria-modal="true" aria-labelledby="orderTitle" hidden>
+  <div class="order-bar">
+    <span class="mono order-sheet" data-i18n="o_sheet">Blad 03 — Aanvraagformulier</span>
+    <div class="order-bar-r">
+      <div class="lang" role="group" aria-label="Taal / Langue / Language">
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="nl" aria-pressed="true">NL</button>
+      </div>
+      <button type="button" class="order-close mono" data-close><span data-i18n="o_close">Sluiten</span> <b aria-hidden="true">✕</b></button>
+    </div>
+  </div>
+
+  <div class="order-inner">
+    <aside class="order-side">
+      <p class="mono order-brand">A.C. PROJECTS</p>
+      <h2 class="order-title" id="orderTitle" data-i18n="o_title">Offerte aanvragen</h2>
+      <p class="order-intro" data-i18n="o_intro"></p>
+      <p class="order-free mono"><span aria-hidden="true">◦</span> <span data-i18n="o_free"></span></p>
+      <ol class="steps" id="steps">
+        <li><b>01</b><span data-i18n="st1"></span></li>
+        <li><b>02</b><span data-i18n="st2"></span></li>
+        <li><b>03</b><span data-i18n="st3"></span></li>
+        <li><b>04</b><span data-i18n="st4"></span></li>
+      </ol>
+      <svg class="order-plan" viewBox="0 0 260 150" aria-hidden="true">
+        <path pathLength="1" d="M20 20 H240 V110 H20 Z"/>
+        <path pathLength="1" d="M20 20 L65 65 H195 L240 20 M20 110 L65 65 M240 110 L195 65"/>
+        <path pathLength="1" class="thin" d="M20 128 H240 M20 122 V134 M240 122 V134 M256 20 V110 M250 20 H262 M250 110 H262"/>
+        <path pathLength="1" d="M117 104 l13 -6 l13 6 v14 l-13 6 l-13 -6 Z M130 98 V124 M117 111 H143"/>
+        <text x="130" y="145" text-anchor="middle">14 000</text>
+      </svg>
+    </aside>
+
+    <div class="order-main">
+      <div class="progress" aria-hidden="true"><i id="progBar"></i></div>
+      <form id="orderForm" novalidate>
+        <div id="stepBody"></div>
+        <div class="form-nav">
+          <button type="button" class="btn-ghost mono" id="btnBack"><b aria-hidden="true">←</b> <span data-i18n="back">Vorige</span></button>
+          <button type="submit" class="btn-gold mono" id="btnNext"><span id="btnNextTxt">Volgende</span> <b aria-hidden="true">→</b></button>
+        </div>
+      </form>
+      <div class="done" id="orderDone" hidden></div>
+    </div>
+  </div>
+</div>
+
+<!-- Netlify Forms reads this hidden form at deploy time; the visible wizard posts the same field names -->
+<form name="offerte" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input name="bot-field"><input name="referentie"><input name="taal">
+  <input name="work"><input name="urgency"><input name="roofType"><input name="building"><input name="cover">
+  <input name="area"><input name="floors"><input name="year"><input name="street"><input name="zip"><input name="city">
+  <input name="start"><input name="photos"><textarea name="desc"></textarea>
+  <input name="first"><input name="last"><input name="email"><input name="phone"><input name="contactPref">
+  <input name="company"><input name="gdpr">
+</form>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

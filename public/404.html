@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pagina niet gevonden — A.C. Projects</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0a0907">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,200..800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #0a0907; --ink: #ece4d2; --dim: #8f8672; --gold: #c9a961; --hi: #ecd497; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    min-height: 100vh; min-height: 100svh; display: grid; place-items: center; padding: 24px 16px;
+    background:
+      linear-gradient(rgba(201, 169, 97, .045) 1px, transparent 1px) 0 0 / 32px 32px,
+      linear-gradient(90deg, rgba(201, 169, 97, .045) 1px, transparent 1px) 0 0 / 32px 32px,
+      radial-gradient(ellipse 60% 50% at 50% 50%, rgba(236, 212, 151, .1), transparent 70%),
+      var(--bg);
+    color: var(--ink); font-family: "Archivo", Arial, sans-serif; text-align: center;
+  }
+  .mono { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--dim); }
+  h1 {
+    margin: 18px 0 10px; font-weight: 700; font-stretch: 115%; letter-spacing: -.04em; line-height: .9;
+    font-size: clamp(96px, 26vw, 260px);
+    background: linear-gradient(175deg, #fff3cf, var(--hi) 20%, var(--gold) 55%, #7d6330);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    filter: drop-shadow(0 0 28px rgba(236, 212, 151, .25));
+  }
+  p { color: var(--ink); opacity: .85; margin-bottom: 32px; line-height: 1.5; }
+  a {
+    display: inline-flex; gap: 12px; padding: 15px 22px; border: 1px solid var(--gold); color: var(--hi); text-decoration: none;
+    font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .16em; text-transform: uppercase;
+    box-shadow: 0 0 24px rgba(236, 212, 151, .25); transition: background-color .3s, color .3s;
+  }
+  a:hover { background: var(--gold); color: var(--bg); }
+</style>
+</head>
+<body>
+  <main>
+    <p class="mono">A.C. Projects — Blad 404</p>
+    <h1>404</h1>
+    <p>Deze pagina bestaat niet. · Cette page n’existe pas. · This page does not exist.</p>
+    <a href="/">Naar de homepage →</a>
+  </main>
+</body>
+</html>
